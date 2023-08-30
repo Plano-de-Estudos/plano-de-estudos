@@ -106,6 +106,7 @@ input{
 .nota{
     background-color: rgb(14, 14, 14);
     font-family: 'Courier New', Courier, monospace;
+    font-size: min(max(10px, 2vw), 15px);
     color: white;
     box-shadow: 0px 0px 10px orangered;
     width: auto;
