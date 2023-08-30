@@ -26,7 +26,7 @@ function Main()
 
     input = document.getElementById("input");
     input.innerHTML += "<input class='inputs' id='qtdMaterias' type='text' placeholder='Quantas matérias vai estudar?' style='width: 300px;'>";
-    input.innerHTML += "<input class='inputs' id='button' type='button' onclick='Set_qtdMaterias1()' value='Continuar'>";
+    input.innerHTML += "<br id='br'><input class='inputs' id='button' type='button' onclick='Set_qtdMaterias1()' value='Continuar'>";
 }
 
 var qtdMaterias;
@@ -38,6 +38,7 @@ function Set_qtdMaterias1()
     {
         document.getElementById("qtdMaterias").remove();
         document.getElementById("button").remove();
+        document.getElementById("br").remove();
         
         var i = 0;
         while (i < qtdMaterias)
@@ -46,7 +47,7 @@ function Set_qtdMaterias1()
             i++;
         }
 
-        input.innerHTML += "<input class='inputs' id='button' type='button' onclick='Set_dificuldade()' value='Continuar'>";
+        input.innerHTML += "<br id='br'><input class='inputs' id='button' type='button' onclick='Set_dificuldade()' value='Continuar'>";
     }
     else
     {
@@ -68,6 +69,7 @@ function Set_dificuldade()
         i++;
     }
     document.getElementById("button").remove();
+    document.getElementById("br").remove();
 
     i = 0;
 
@@ -78,7 +80,7 @@ function Set_dificuldade()
         input.innerHTML += "<input class='inputs' id='IDdificuldade" + i + "' type='text' placeholder='" + materias[i] + "'>";
         i++;
     }
-    input.innerHTML += "<input class='inputs' id='button' type='button' onclick='Set_dificuldadeTotal()' value='Continuar'>";
+    input.innerHTML += "<br id='br'><input class='inputs' id='button' type='button' onclick='Set_dificuldadeTotal()' value='Continuar'>";
 }
 
 var dificuldade = new Array();
@@ -97,12 +99,13 @@ function Set_dificuldadeTotal()
         i++;
     }
     document.getElementById("button").remove();
+    document.getElementById("br").remove();
     document.getElementById("sub").remove();
 
     input.innerHTML += "<input class='inputs' id='qtdDias' type='text' placeholder='Quantos dias terá no seu ciclo de estudo?' style='width: 380px;'>";
     input.innerHTML += "<input class='inputs' id='qtdSessoes' type='text' placeholder='Quantas sessões planeja por dia?' style='width: 380px;'>";
 
-    input.innerHTML += "<input class='inputs' id='button' type='button' onclick='Calc()' value='Criar'>";
+    input.innerHTML += "<br id='br'><input class='inputs' id='button' type='button' onclick='Calc()' value='Criar'>";
 }
 
 var qtdDias;

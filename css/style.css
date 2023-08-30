@@ -19,16 +19,16 @@ header{
     background-color: rgb(44, 44, 44);
     border-radius: 50px;
     box-shadow: 0px 10px rgb(14, 14, 14);
+    z-index: 100;
 }
 .title{
-    font-size: clamp(0.5em, 1.0em + 1.5vw, 3em);
+    font-size: min(max(15px, 3vw), 40px);
     color: white;
-    padding-top: 4vw;
+    padding-top: 5%;
     padding-right: 10px;
 }
 .logo{
-    width: 20%;
-    min-width: 220px;
+    width: max(20%, 120px);
     float: left;
     padding-top: 1%;
 }
@@ -41,6 +41,7 @@ nav{
 }
 .divnav{
     width: auto;
+    font-size: min(max(13px, 2vw), 20px);
 }
 td{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -59,7 +60,7 @@ section{
     color: white;
     background-color: rgb(44, 44, 44);
     margin-top: 50px;
-    font-size: min(25px, 10vw);
+    font-size: min(max(20px, 3vw), 30px);
     border-radius: 50px;
     width: 70vw;
     padding: 30px;
@@ -67,7 +68,7 @@ section{
     box-shadow: 10px 10px 0px rgb(14, 14, 14);
 }
 p{
-    font-size: min(35px, 15vw);
+    font-size: min(max(25px, 5vw), 40px);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 footer{
@@ -75,8 +76,11 @@ footer{
     width: 94%;
     color: rgb(168, 168, 168);
     background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 0px rgb(8, 8, 8);
     padding: 10px;
     border-radius: 50px;
+    margin-bottom: 50px;
+    font-size: min(max(15px, 2vw), 20px);
 }
 ul{
     text-align: left;
@@ -89,7 +93,7 @@ li{
     color: rgb(150, 150, 150);
 }
 .lilinks{
-    font-size: min(20px, 10vw);
+    font-size: min(max(15px, 2vw), 25px);
 }
 input{
     color: white;
@@ -141,19 +145,18 @@ input{
 #input{
     margin: auto;
     padding: 20px;
-    width: 420px;
+    width: min(420px, 80%);
     height: auto;
     border-radius: 50px;
     box-shadow: 0px 0px 20px orangered;
     background-color: rgb(44, 44, 44);
 }
 .inputs{
-    margin: 5px;
-}
-#button{
-    margin: 20px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #sub{
     color: white;
-    font-size: 20px;
+    font-size: min(20px, 4vw);
 }
