@@ -16,7 +16,7 @@ async function sendChatRequest() {
             },
             body: JSON.stringify({
                 model: 'gpt-3.5-turbo',
-                messages: [{ role: 'system', content: 'Você é um assistente de bate-papo.' }, { role: 'user', content: prompt }],
+                messages: [{ role: 'system', content: 'Dê os conteúdos da matéria pedida pelo usuário' }, { role: 'user', content: prompt }],
             }),
         });
 
