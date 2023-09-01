@@ -2,7 +2,7 @@
 
 // Função para enviar uma solicitação para a API do ChatGPT
 async function sendChatRequest() {
-    const apiKey = 'SUA_CHAVE_DE_API'; // Substitua pela sua chave de API real
+    const apiKey = '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';
     const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
     const prompt = 'Oi, GPT-3! Como você está hoje?';
